@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
 body{
     background-image: url('background.jpg');
     background-repeat: no-repeat;
@@ -5,10 +6,19 @@ body{
     background-size: cover;
 }
 
+:root{
+    --green: #43aa8b;
+    --red: #bc4749;
+    --black:#000000;
+    --white:#ffffff;
+    --background:#ff9933;
+    --input-Background:#b35900;
+    --button:#241d1d;
+}
 table{
     width: 80%;
     margin: 40px auto;
-    background:#ff9933;
+    background:var(--background);
 }
 
 table.list{
@@ -37,7 +47,7 @@ input[type="text"],input[type="number"]{
 }
 
 input[type="submit"],input[type="reset"]{
-    background: #eee;
+    background:var(--white);
     padding:5px 12px;
     margin:25px 20px 10px;
     display: inline-block;
@@ -46,21 +56,23 @@ input[type="submit"],input[type="reset"]{
     font-size: 1rem;
     cursor: pointer;
     outline: none;
-    background-color:#e67300;
-    color:#ffffff;
+    background-color:var(--button);
+    color:var(--white);
     
 }
 
 input[type="submit"]:hover{
-    background: #b35900;
+    background: var(--white);
+    color:var(--background);
 }
 
 input[type="reset"]:hover{
-    background: #b35900;
+    background: var(--white);
+    color:var(--background);
 }
 
 button{
-    background: #eee;
+    background: var(--white);
     padding:6px 12px;
     margin:15px 0 10px;
     display: inline-block;
@@ -69,10 +81,11 @@ button{
     font-size: 1rem;
     cursor: pointer;
     outline: none;
-    background-color:#e67300;
-    color:#ffffff;
+    background-color:var(--button);
+    color:var(--white);
 }
 
 button:hover{
-    background:#b35900 ;
+    background: var(--white);
+    color:var(--background);
 }
